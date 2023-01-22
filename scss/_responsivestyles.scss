@@ -13,13 +13,13 @@ $maxWidth: 1200;
    margin: 0 auto;
 }
 
-@mixin adaptiv-textbox-right{
+@mixin adaptiv-textbox-right {
    margin-right: 0 !important;
    text-align: center !important;
    width: 50% !important;
 }
 
-@mixin adaptiv-textbox-left{
+@mixin adaptiv-textbox-left {
    margin-left: 0 !important;
    text-align: center !important;
    width: 50% !important;
@@ -64,7 +64,7 @@ $maxWidth: 1200;
       margin-bottom: 10px;
    }
 
-   .sounds__img{
+   .sounds__img {
       margin-right: 0 !important;
    }
 
@@ -73,13 +73,13 @@ $maxWidth: 1200;
       flex-direction: column;
    }
 
-   .experience__text{
+   .experience__text {
       order: 1;
       @include adaptiv-textbox-right;
       margin-bottom: 10px;
    }
 
-   .experience__img{
+   .experience__img {
       order: 2;
       margin-left: 0 !important;
    }
@@ -117,18 +117,63 @@ $maxWidth: 1200;
    .container {
       max-width: 713px !important;
    }
+
+   // /*HEADER*/
+   .page-header .container {
+      flex-wrap: wrap;
+   }
+
+   .nav-header {
+      padding-left: 0 !important;
+   }
+
+   .nav-block {
+      margin-left: 0 !important;
+   }
+
+   .nav-menu {
+      margin-left: 130px;
+   }
+
+   .main-logo {
+   }
+
+   .log-menu {
+      margin-right: 0 !important;
+   }
+
+   /*PLAYGROUND SECT*/
+   .playground .playground__block {
+      width: 80% !important;
+      p {
+         @include adaptiv-font(20, 17);
+      }
+
+      h1 {
+         @include adaptiv-font(72, 54);
+      }
+   }
 }
 
 @media (max-width: 768px) {
    .container {
       max-width: 600px !important;
    }
-   /*SOUNDS SECT*/ 
-   .sounds__img img{
+   /*HEADER*/
+   .page-header .container a {
+      @include adaptiv-font(16, 12);
+   }
+
+   #sign-up-btn {
+      @include adaptiv-font(16, 12);
+   }
+
+   /*SOUNDS SECT*/
+   .sounds__img img {
       @include adaptiv-img;
    }
 
-   /*EXPERIENCE SECT*/ 
+   /*EXPERIENCE SECT*/
    .experience__img img {
       @include adaptiv-img;
    }
@@ -148,9 +193,22 @@ $maxWidth: 1200;
    .container {
       max-width: 500px !important;
    }
-   
+
+   /*HEADER*/
+   .main-logo img {
+      max-width: 230%;
+   }
+
+   .nav-menu {
+      margin-left: 60px !important;
+   }
+
+   #sign-up-btn {
+      @include adaptiv-font(13, 11);
+   }
+
    /*SOUNDS SECT*/
-   .sounds__text{
+   .sounds__text {
       @include adaptiv-font(16, 12);
       width: 70% !important;
 
@@ -160,7 +218,7 @@ $maxWidth: 1200;
    }
 
    /*EXPERIENCE SECT*/
-   .experience__text{
+   .experience__text {
       @include adaptiv-font(16, 12);
       width: 70% !important;
 
@@ -169,7 +227,7 @@ $maxWidth: 1200;
       }
    }
 
-   /*GEAR SECT*/ 
+   /*GEAR SECT*/
    .gear__text {
       @include adaptiv-font(16, 12);
       width: 70% !important;
@@ -212,7 +270,28 @@ $maxWidth: 1200;
       max-width: 400px !important;
    }
 
-   /*TODAY SEC*/
+   /*HEADER*/
+   .page-header .container {
+      flex-direction: column;
+      a {
+         @include adaptiv-font(13, 10);
+      }
+   }
+
+   .nav-menu{
+      margin-left: 0 !important;
+   }
+
+   .main-logo img{
+      max-width: 0% !important;
+   }
+   /*PLAYGROUND SECT*/
+   .playground__block {
+      text-align: center;
+      margin-right: 0 !important;
+   }
+
+   /*TODAY SECT*/
    .today .h2section {
       font-size: 37px;
    }
@@ -236,6 +315,3 @@ $maxWidth: 1200;
       margin-bottom: 20px;
    }
 }
-
-// @media (max-width: 375px) {
-// }

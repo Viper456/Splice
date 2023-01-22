@@ -6,7 +6,7 @@
 }
 /*CONNECT FONTS AND SCSS FILES*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import 'responsivestyles';
+@import "responsivestyles";
 /*COMMON STYLES*/
 html {
    scroll-behavior: smooth;
@@ -103,14 +103,18 @@ ul {
 .grey-links {
    margin: 0;
 
-   a{
+   a {
       font-size: 14px;
       line-height: 1.5;
       color: #a6a8ad;
+      &:hover {
+         color: #00ffff;
+         transition: all 0.4s ease-out;
+      }
    }
-   li{
+   li {
       margin-bottom: 11px;
-      &:last-child{
+      &:last-child {
          margin-bottom: 0;
       }
    }
@@ -386,7 +390,7 @@ ul {
    .skillstudio__block {
       display: flex;
       flex-direction: column;
-      .skills__box{
+      .skills__box {
          margin-bottom: 24px;
       }
 
@@ -395,7 +399,7 @@ ul {
       }
    }
 
-   .splice__rights{
+   .splice__rights {
       display: flex;
       flex-wrap: wrap;
       font-size: 14px;
@@ -403,23 +407,27 @@ ul {
       color: #a6a8ad;
       margin-left: 48px;
 
-      p{
+      p {
          margin: 0;
       }
-      .splice__rights-nav{
+      .splice__rights-nav {
          display: flex;
          align-items: center;
-         li{
+         li {
             margin-bottom: 0;
             margin-left: 24px;
          }
       }
 
-      .social-links{
+      .social-links {
          margin-left: 30px;
          a {
             color: #ffffff;
+            &:hover {
+               color: #0000ff;
+               transition: all 0.4s ease-in-out;
+            }
          }
-      } 
+      }
    }
 }
