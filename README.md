@@ -4,5 +4,8 @@
 -fixed some issues with background images and added responsive web design (imported _responsivestyles).
 
 22.01.23 | 
--add simple animation to creators section;
--add responsive web design to new sections.
+-added simple animation to creators section;
+-added responsive web design to new sections.
+
+22.01.23 |
+-added hovers to footer, also add new responsive design..
