@@ -6,3 +6,6 @@
 22.01.23 | 
 -add simple animation to creators section;
 -add responsive web design to new sections.
+
+22.01.23 |
+-add hovers
