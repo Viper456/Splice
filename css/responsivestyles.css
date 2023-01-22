@@ -17,6 +17,47 @@
   .container {
     max-width: 900px !important;
   }
+  /*SOUNDS SECT*/
+  .sounds .container {
+    flex-direction: column;
+  }
+  .sounds__text {
+    margin-left: 0 !important;
+    text-align: center !important;
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+  .sounds__img {
+    margin-right: 0 !important;
+  }
+  /*EXPERIENCE SECT*/
+  .experience .container {
+    flex-direction: column;
+  }
+  .experience__text {
+    order: 1;
+    margin-right: 0 !important;
+    text-align: center !important;
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+  .experience__img {
+    order: 2;
+    margin-left: 0 !important;
+  }
+  /*GEAR SECT*/
+  .gear .container {
+    flex-direction: column;
+  }
+  .gear__text {
+    margin-left: 0 !important;
+    text-align: center !important;
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+  .gear__img {
+    margin-right: 0 !important;
+  }
   /*TECHNOLOGY SECT*/
   .technology .container {
     flex-direction: column;
@@ -41,13 +82,67 @@
   .container {
     max-width: 600px !important;
   }
+  /*SOUNDS SECT*/
+  .sounds__img img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  /*EXPERIENCE SECT*/
+  .experience__img img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  /*GEAR SECT*/
+  .gear__img img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  /*TECHNOLOGY SECT*/
+  .technology__img img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 620px) {
   .container {
     max-width: 500px !important;
   }
-  /*CREATORS SECT*/
-  .creators .h2section {
+  /*SOUNDS SECT*/
+  .sounds__text {
+    font-size: calc(
+      12px + 4 * ((100vw - 320px) / 880)
+   );
+    width: 70% !important;
+  }
+  .sounds__text .h2section {
+    font-size: calc(
+      24px + 4 * ((100vw - 320px) / 880)
+   );
+  }
+  /*EXPERIENCE SECT*/
+  .experience__text {
+    font-size: calc(
+      12px + 4 * ((100vw - 320px) / 880)
+   );
+    width: 70% !important;
+  }
+  .experience__text .h2section {
+    font-size: calc(
+      24px + 4 * ((100vw - 320px) / 880)
+   );
+  }
+  /*GEAR SECT*/
+  .gear__text {
+    font-size: calc(
+      12px + 4 * ((100vw - 320px) / 880)
+   );
+    width: 70% !important;
+  }
+  .gear__text .h2section {
     font-size: calc(
       24px + 4 * ((100vw - 320px) / 880)
    );
@@ -64,8 +159,16 @@
       24px + 4 * ((100vw - 320px) / 880)
    );
   }
-  .technology__img {
-    object-fit: cover;
+  /*CREATORS SECT*/
+  .creators .h2section {
+    font-size: calc(
+      24px + 4 * ((100vw - 320px) / 880)
+   );
+  }
+  .creators__block .pcreator {
+    font-size: calc(
+      17px + 3 * ((100vw - 320px) / 880)
+   );
   }
   /*FOOTER*/
   .footer__block {
@@ -81,7 +184,6 @@
   .container {
     max-width: 400px !important;
   }
-  /**/
   /*TODAY SEC*/
   .today .h2section {
     font-size: 37px;

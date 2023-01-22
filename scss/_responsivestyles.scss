@@ -7,6 +7,24 @@ $maxWidth: 1200;
    );
 }
 
+@mixin adaptiv-img {
+   max-width: 70%;
+   display: block;
+   margin: 0 auto;
+}
+
+@mixin adaptiv-textbox-right{
+   margin-right: 0 !important;
+   text-align: center !important;
+   width: 50% !important;
+}
+
+@mixin adaptiv-textbox-left{
+   margin-left: 0 !important;
+   text-align: center !important;
+   width: 50% !important;
+}
+
 @media (max-width: 1240px) {
    // .container {
    //    max-width: 1020px !important;
@@ -34,6 +52,52 @@ $maxWidth: 1200;
       max-width: 900px !important;
    }
 
+   /*SOUNDS SECT*/
+   .sounds .container {
+      flex-direction: column;
+   }
+
+   .sounds__text {
+      margin-left: 0 !important;
+      text-align: center !important;
+      width: 50% !important;
+      margin-bottom: 10px;
+   }
+
+   .sounds__img{
+      margin-right: 0 !important;
+   }
+
+   /*EXPERIENCE SECT*/
+   .experience .container {
+      flex-direction: column;
+   }
+
+   .experience__text{
+      order: 1;
+      @include adaptiv-textbox-right;
+      margin-bottom: 10px;
+   }
+
+   .experience__img{
+      order: 2;
+      margin-left: 0 !important;
+   }
+
+   /*GEAR SECT*/
+   .gear .container {
+      flex-direction: column;
+   }
+
+   .gear__text {
+      @include adaptiv-textbox-left;
+      margin-bottom: 10px;
+   }
+
+   .gear__img {
+      margin-right: 0 !important;
+   }
+
    /*TECHNOLOGY SECT*/
    .technology .container {
       flex-direction: column;
@@ -41,9 +105,7 @@ $maxWidth: 1200;
 
    .technology__text {
       order: 1;
-      margin-right: 0 !important;
-      text-align: center !important;
-      width: 50% !important;
+      @include adaptiv-textbox-right;
    }
    .technology__img {
       order: 2;
@@ -61,16 +123,60 @@ $maxWidth: 1200;
    .container {
       max-width: 600px !important;
    }
+   /*SOUNDS SECT*/ 
+   .sounds__img img{
+      @include adaptiv-img;
+   }
+
+   /*EXPERIENCE SECT*/ 
+   .experience__img img {
+      @include adaptiv-img;
+   }
+
+   /*GEAR SECT*/
+   .gear__img img {
+      @include adaptiv-img;
+   }
+
+   /*TECHNOLOGY SECT*/
+   .technology__img img {
+      @include adaptiv-img;
+   }
 }
 
 @media (max-width: 620px) {
    .container {
       max-width: 500px !important;
    }
+   
+   /*SOUNDS SECT*/
+   .sounds__text{
+      @include adaptiv-font(16, 12);
+      width: 70% !important;
 
-   /*CREATORS SECT*/
-   .creators .h2section {
-      @include adaptiv-font(28, 24);
+      .h2section {
+         @include adaptiv-font(28, 24);
+      }
+   }
+
+   /*EXPERIENCE SECT*/
+   .experience__text{
+      @include adaptiv-font(16, 12);
+      width: 70% !important;
+
+      .h2section {
+         @include adaptiv-font(28, 24);
+      }
+   }
+
+   /*GEAR SECT*/ 
+   .gear__text {
+      @include adaptiv-font(16, 12);
+      width: 70% !important;
+
+      .h2section {
+         @include adaptiv-font(28, 24);
+      }
    }
 
    /*TECHNOLOGY SECT*/
@@ -83,8 +189,13 @@ $maxWidth: 1200;
       }
    }
 
-   .technology__img {
-      object-fit: cover;
+   /*CREATORS SECT*/
+   .creators .h2section {
+      @include adaptiv-font(28, 24);
+   }
+
+   .creators__block .pcreator {
+      @include adaptiv-font(20, 17);
    }
 
    /*FOOTER*/
@@ -100,8 +211,6 @@ $maxWidth: 1200;
    .container {
       max-width: 400px !important;
    }
-
-   /**/
 
    /*TODAY SEC*/
    .today .h2section {
