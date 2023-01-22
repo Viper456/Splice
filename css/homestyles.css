@@ -7,6 +7,51 @@
 }
 
 /*CONNECT FONTS AND SCSS FILES*/
+@media (max-width: 1240px) {
+  /*FOOTER*/
+  .studio__box {
+    margin-bottom: 24px;
+  }
+  .community__box {
+    margin-bottom: 24px;
+  }
+  .sounds__box {
+    margin-bottom: 24px;
+  }
+  .beatmaker__box {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 1070px) {
+  .container {
+    max-width: 900px !important;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    max-width: 713px !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px !important;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    max-width: 500px !important;
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    max-width: 400px !important;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 300px !important;
+  }
+}
 /*COMMON STYLES*/
 html {
   scroll-behavior: smooth;
@@ -47,7 +92,7 @@ ul {
 /*TEMPLATES CLASSES*/
 .blue-btn {
   background: #0033ff;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
   color: #fff;
 }
@@ -105,18 +150,18 @@ ul {
   text-decoration: underline;
 }
 
-.white-links {
+.grey-links {
   margin: 0;
 }
-.white-links a {
+.grey-links a {
   font-size: 14px;
   line-height: 1.5;
   color: #a6a8ad;
 }
-.white-links li {
+.grey-links li {
   margin-bottom: 11px;
 }
-.white-links li:last-child {
+.grey-links li:last-child {
   margin-bottom: 0;
 }
 
@@ -185,7 +230,7 @@ ul {
 
 /*PLAYGROUND SECTION*/
 .playground {
-  background: url("/img/bgrounds/main_bg.jpg") no-repeat;
+  background: url("../img/bgrounds/main_bg.jpg") no-repeat;
   background-size: cover;
   padding: 140px 0 150px 0;
   color: #fff;
@@ -343,7 +388,7 @@ ul {
 
 /*TODAY SECTION*/
 .today {
-  background: url("/img/bgrounds/try_bg.jpg") no-repeat;
+  background: url("../img/bgrounds/try_bg.jpg") no-repeat;
   background-size: cover;
   color: #fff;
   padding-top: 283px;

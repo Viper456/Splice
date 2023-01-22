@@ -1,0 +1,107 @@
+@media (max-width: 1240px) {
+  /*FOOTER*/
+  .studio__box {
+    margin-bottom: 24px;
+  }
+  .community__box {
+    margin-bottom: 24px;
+  }
+  .sounds__box {
+    margin-bottom: 24px;
+  }
+  .beatmaker__box {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 1070px) {
+  .container {
+    max-width: 900px !important;
+  }
+  /*TECHNOLOGY SECT*/
+  .technology .container {
+    flex-direction: column;
+  }
+  .technology__text {
+    order: 1;
+    margin-right: 0 !important;
+    text-align: center !important;
+    width: 50% !important;
+  }
+  .technology__img {
+    order: 2;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    max-width: 713px !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px !important;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    max-width: 500px !important;
+  }
+  /*CREATORS SECT*/
+  .creators .h2section {
+    font-size: calc(
+      24px + 4 * ((100vw - 320px) / 880)
+   );
+  }
+  /*TECHNOLOGY SECT*/
+  .technology__text {
+    font-size: calc(
+      12px + 4 * ((100vw - 320px) / 880)
+   );
+    width: 70% !important;
+  }
+  .technology__text .h2section {
+    font-size: calc(
+      24px + 4 * ((100vw - 320px) / 880)
+   );
+  }
+  .technology__img {
+    object-fit: cover;
+  }
+  /*FOOTER*/
+  .footer__block {
+    margin-right: 48px !important;
+  }
+  .footer__block .h4footer {
+    font-size: calc(
+      18px + 2 * ((100vw - 320px) / 880)
+   );
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    max-width: 400px !important;
+  }
+  /**/
+  /*TODAY SEC*/
+  .today .h2section {
+    font-size: 37px;
+  }
+  /*FOOTER*/
+  .plugins__box {
+    margin-bottom: 24px;
+  }
+  .splice__rights {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  .splice__rights p {
+    margin-bottom: 20px !important;
+  }
+  .splice__rights-nav {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=responsivestyles.css.map */
