@@ -8,7 +8,8 @@
 -added responsive web design to new sections.
 
 22.01.23 |
--added hovers to footer, also add new responsive design..
+-added hovers to footer, also add new responsive design.
 
 23.01.23 |
--fixed some issues with normalize.css
+-fixed some issues with normalize.css;
+-add responsive web design to new sections.
