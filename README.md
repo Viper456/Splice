@@ -9,3 +9,6 @@
 
 22.01.23 |
 -added hovers to footer, also add new responsive design..
+
+23.01.23 |
+-fixed some issues with normalize.css
