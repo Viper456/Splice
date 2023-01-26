@@ -1,4 +1,5 @@
-# Splice Project UPDATES 
+# Splice Project 
+# UPDATES 
 
 21.01.23 |
 -fixed some issues with background images and added responsive web design (imported _responsivestyles).
@@ -8,4 +9,8 @@
 -added responsive web design to new sections.
 
 22.01.23 |
--added hovers to footer, also add new responsive design..
+-added hovers to footer, also add new responsive design.
+
+23.01.23 |
+-fixed some issues with normalize.css;
+-add responsive web design to new sections.
