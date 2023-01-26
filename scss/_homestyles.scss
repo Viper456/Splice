@@ -6,7 +6,8 @@
 }
 /*CONNECT FONTS AND SCSS FILES*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import "responsivestyles";
+@import "./reset";
+@import "./responsivestyles";
 /*COMMON STYLES*/
 html {
    scroll-behavior: smooth;
