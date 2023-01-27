@@ -13,4 +13,7 @@
 
 23.01.23 |
 -fixed some issues with normalize.css;
--add responsive web design to new sections.
+-added responsive web design to new sections.
+
+27.01.23 |
+-removed normalize.css(reset styles) to _reset.scss.
